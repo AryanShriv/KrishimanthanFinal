@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #66aa70;
+    --light-green: #f3fff4;
+    --white: white;
+    --black: #000;
+    --grey: #6c6c6c;
+}
+
+/* LifestyleCard.css */
+
+.LocalNews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.heading h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 3vh 0;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    width: 65rem
+}
+
+.card {
+    width: 32%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .card-content {
+    background: var(--light-green);
+    padding: 1.5vh 0.5vw;
+}
+
+.card .card-content h5 {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card .card-content p {
+    color: var(--grey);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+

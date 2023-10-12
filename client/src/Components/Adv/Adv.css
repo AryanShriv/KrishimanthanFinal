@@ -1,0 +1,43 @@
+.advertise {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.advertise img {
+    display: block;
+    width: 100%;
+    /* Use percentage-based width */
+    max-width: 68rem;
+    /* Set a maximum width for large screens */
+    max-height: 17rem;
+    /* Set a maximum height for the images */
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.advertise p {
+    font-style: italic;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .advertise img {
+        max-width: 19rem;
+        max-height: 13rem;
+    }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 1024px) {
+    .advertise img {
+        max-width: 35rem;
+        max-height: 15rem;
+    }
+}

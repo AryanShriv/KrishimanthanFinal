@@ -1,0 +1,48 @@
+ <ul className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
+          <Slide>
+            <li>
+              <Link to="/" onClick={closeMobileMenu}>
+                {/* होम */}
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Krishi" onClick={closeMobileMenu}>
+                {/* कृषि */}
+                Krishi
+              </Link>
+            </li>
+            <li>
+              <Link to="/Sehkarita" onClick={closeMobileMenu}>
+                {/* सहकारिता */}
+                Sehkarita
+              </Link>
+            </li>
+            <li>
+              <Link to="/Panchayat" onClick={closeMobileMenu}>
+                {/* पंचायत */}
+                Panchayat
+              </Link>
+            </li>
+            <li>
+              <Link to="/Pashupalan" onClick={closeMobileMenu}>
+                {/* पशुपालन */}
+                Pashupalan
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/Van" onClick={closeMobileMenu}>
+                {/* वन */}
+                Van
+              </Link>
+            </li>
+            <li>
+              <Link to="/EPaper" onClick={closeMobileMenu}>
+                {/* ई-पेपर */}
+                E-Paper
+              </Link>
+            </li>
+            
+          </Slide>
+        </ul>

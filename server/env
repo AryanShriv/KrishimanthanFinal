@@ -1,0 +1,3 @@
+DB_URI=mongodb+srv://root:root@database.goujzgf.mongodb.net/newsDB2?retryWrites=true&w=majority
+
+JWT_SECRET=secret

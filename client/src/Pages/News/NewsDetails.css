@@ -1,0 +1,377 @@
+:root {
+    --primary-color: #66aa70;
+    --light-green: #f3fff4;
+    --white: white;
+    --black: #000;
+    --grey: #6c6c6c;
+}
+
+.MainCardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center horizontally */
+}
+
+.MainCard {
+    margin: 3vh 0;
+    width: 100%;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.ImgHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Vertically center align items */
+    width: 100%;
+}
+
+.CardImage {
+    flex: 1;
+    /* Occupy half of the available space */
+    padding-right: 1rem;
+    /* Add some spacing between image and content */
+}
+
+.CardImage img {
+    width: 100%;
+    height: 250px;
+    /* Set your desired fixed height here */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card img {
+    width: auto;
+    /* Allow the width to adjust */
+    height: 200px;
+    /* Set a fixed height for the image */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    /* Occupy the other half of the available space */
+    padding-left: 1rem;
+    /* Add some spacing between content and image */
+}
+
+.heading p {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 3vh 0;
+}
+
+/* .CardHeading {
+    width: 58%;
+} */
+
+.CardHeading h5 {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+.description {
+    padding: 2vh 0;
+    color: var(--grey);
+}
+
+.description p {
+    line-height: 1.6rem;
+    font-size: 1rem;
+    padding: 0 0.5vw;
+}
+
+.MainCard .description button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border: none;
+    background-color: var(--primary-color);
+    width: 45%;
+    padding: 1vh 0;
+    border-radius: 5px;
+    margin-top: 2.5vh;
+    transition: 0.5s;
+}
+
+.MainCard .description button a {
+    color: var(--white);
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.MainCard .description button:hover {
+    box-shadow: 2px 2px 5px 0px var(--primary-color);
+}
+
+
+/* LifestyleCard.css */
+
+.LocalNewsKrishi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    /* Use 100% width by default */
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.heading h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 3vh 0;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    width: 65rem
+}
+
+.card {
+    width: 32%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .card-content {
+    background: var(--light-green);
+    padding: 1.5vh 0.5vw;
+}
+
+.card .card-content h5 {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card .card-content p {
+    color: var(--grey);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1vh;
+}
+
+/* Navigation */
+
+/* Navigation Section Styles */
+/* Apply smooth scrolling to anchor links */
+.section-navigation {
+    position: sticky;
+    top: 20px;
+    width: 270px;
+    background-color: var(--light-green);
+    padding: 15px 8px;
+    border-radius: 10px;
+    max-height: calc(100vh - 30px);
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+}
+
+.section-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-navigation a {
+    scroll-behavior: smooth;
+    margin: 8px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    display: block;
+    padding: 12px 6px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+/* .section-navigation li {
+  padding: 12px 0;
+} */
+
+/* Normal state */
+.section-navigation a {
+    /* background: transparent; */
+    border: 2px solid var(--primary-color);
+    border-radius: 11px;
+}
+
+
+/* Hover state */
+.section-navigation a:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Active state (if needed) */
+.section-navigation a.active {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Additional styles for the active link */
+.section-navigation a.active:hover {
+    background: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.section-navigation {
+    position: fixed;
+    right: 0px;
+    top: 60%;
+    width: 17%;
+    transform: translateY(-50%);
+}
+
+/* Media Query */
+
+/* Media Query for screens with a maximum width of 480px (typical mobile screens) */
+@media (max-width: 480px) {
+    .MainCardContainer {
+        align-items: stretch;
+        /* Adjust alignment for small screens */
+    }
+
+    .ImgHeading {
+        flex-direction: column;
+        /* Stack image and content vertically */
+    }
+
+    .CardImage {
+        width: 100%;
+        /* Full width for small screens */
+        padding-right: 0;
+        /* Remove padding */
+    }
+
+    .card-content {
+        width: 100%;
+        /* Full width for small screens */
+        padding-left: 0;
+        /* Remove padding */
+    }
+
+    .CardImage img {
+        height: auto;
+        /* Allow image height to adjust */
+    }
+
+    .LocalNewsKrishi {
+        width: 70%;
+        /* Set a specific width for larger screens */
+        max-width: 1000px;
+        /* Limit the maximum width for readability */
+        margin: 0 auto;
+        /* Center-align the content horizontally */
+    }
+
+    .section-navigation {
+        visibility: hidden;
+    }
+
+    .CardHeading h5 {
+        font-size: 18px;
+        line-height: 1.4rem;
+    }
+
+    .description p {
+        font-size: 14px;
+        line-height: 1rem;
+    }
+
+    .LifestyleCard {
+        width: 100%;
+        padding: 0 5vw;
+    }
+
+    .heading p {
+        text-align: center;
+    }
+
+    .cardContainer {
+        row-gap: 1.5vh;
+        width: 20rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card .card-content {
+        padding: 1.5vh 3vw;
+    }
+
+    .card .card-content h5 {
+        font-size: 1.2rem;
+    }
+
+    .card .card-content p {
+        font-size: 1rem;
+        margin-top: 0.5vh;
+    }
+
+    .section-navigation {
+        position: fixed;
+        right: 0px;
+        top: 60%;
+        width: 17%;
+        transform: translateY(-50%);
+        z-index: 999;
+        /* Ensure it's above other content */
+        transition: width 0.3s ease-in-out;
+        /* Add a transition for smoother resizing */
+    }
+
+}
+
+/* Media Query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    .section-navigation {
+        width: 100%;
+        /* Full width for small screens */
+        max-width: 300px;
+        /* Limit the maximum width */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+        top: auto;
+        /* Remove top positioning */
+        bottom: 0;
+        /* Position it at the bottom */
+        transform: translateY(0);
+        /* Reset vertical translation */
+    }
+}
+
+@media (min-width: 1024px) {
+    .LocalNewsKrishi {
+        width: 86%;
+    }
+}

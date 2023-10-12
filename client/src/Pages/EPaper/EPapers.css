@@ -1,0 +1,82 @@
+/* PDFSection.css */
+.pdf-section {
+    padding: 40px 0;
+    background-color: #f3fff4;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pdf-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Use space-between to put two PDFs in one row */
+}
+
+.pdf-card {
+    
+    background-color: #f3fff4;
+    flex: calc(50% - 70px);
+    /* Set each PDF card to take up 50% of the container width with some margin */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 15px 12px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pdf-iframe{
+    margin-bottom: 0.7vh;
+}
+
+.pdf-card p{
+    text-align: center;
+}
+
+.pdf-list button{
+    background-color: #6ABA77;
+    padding: 1vh 1.2vw;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 1.5vh;
+    color: white;
+    font-weight: 500;
+}
+
+.pdf-list button:hover{
+    transform: translateY(-3px);
+    background-color: #4b9a58;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-card object {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .center {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
